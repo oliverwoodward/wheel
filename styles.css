@@ -1,23 +1,70 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    margin-top: 50px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#wheel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #spinnerCanvas {
-    border: 2px solid #000;
+    border: 2px solid #fff;
     border-radius: 50%;
+    margin-right: 20px;
 }
 
-#spinButton {
+#controls {
+    text-align: left;
+}
+
+#spinButton, #removeButton {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#memberList {
+    margin-top: 10px;
+}
+
+#result-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#result-popup.hidden {
+    display: none;
 }
 
 #result {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
 }
