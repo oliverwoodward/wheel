@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Standup Spinner</title>
+    <title>CDRE Wheel of Misfortune</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Team Standup Spinner</h1>
-    <canvas id="spinnerCanvas" width="500" height="500"></canvas>
-    <button id="spinButton">Spin the Wheel!</button>
-    <div id="result"></div>
-
+    <h1>CDRE Wheel of Misfortune</h1>
+    <div id="wheel-container">
+        <canvas id="spinnerCanvas" width="600" height="600"></canvas>
+        <div id="controls">
+            <h2>Exclude Members</h2>
+            <div id="memberList"></div>
+            <button id="spinButton">Spin the Wheel!</button>
+        </div>
+    </div>
+    <div id="result-popup" class="hidden">
+        <div id="result"></div>
+        <button id="removeButton">Remove and Spin Again</button>
+    </div>
+    
     <script src="scripts.js"></script>
 </body>
 </html>
